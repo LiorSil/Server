@@ -11,9 +11,11 @@ const getUserByEmployeeId = async (employeeId) => {
 };
 
 const getUsername = async (id) => {
+    console.log("tst");
   const username = await User.findById(id).select("username");
   return username;
 };
+
 
 export default {
   getUserById,
